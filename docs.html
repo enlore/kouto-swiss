@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>docs - kouto swiss - A complete CSS framework for Stylus</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="styles/styles.css"><!--if lt IE 9script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
---></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#webstorm">webstorm</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li><li><a href="#no-conflict-mode">no-conflict-mode</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#ratio-box">ratio-box</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.11.9</strong>, build on top of Stylus <strong class="stylus">v0.50.0</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
+--></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#webstorm">webstorm</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li><li><a href="#no-conflict-mode">no-conflict-mode</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#ratio-box">ratio-box</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.11.10</strong>, build on top of Stylus <strong class="stylus">v0.50.0</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 <p>You can also use <a href="https://www.npmjs.org/package/grunt-ks-stylus">grunt-ks-stylus</a>, which is a fork of <strong>grunt-contrib-stylus</strong>, with <strong>kouto swiss</strong> included.</p>
 </article><article id="gulp"><h1>Included in compilation with gulp</h1><p>To use <strong>kouto swiss</strong> with gulp, use <a href="https://www.npmjs.org/package/gulp-stylus">gulp-stylus</a> and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 </article><article id="third-party"><h1>Included in compilation with third-party tools</h1><p>To use <strong>kouto swiss</strong> with third-party tools like <a href="https://incident57.com/codekit/">Codekit</a> or <a href="http://alphapixels.com/prepros/">Prepros</a>, you should include <strong>kouto swiss</strong> on your project by yourself. You can download it <a href="https://github.com/krkn/kouto-swiss/releases">on github</a>.</p>
@@ -662,14 +662,12 @@ div
 <p>You can set the following global variable to use the recommended prefixes for the variable.</p>
 <pre><code><span class="attribute">ks-vendors-prefixes </span>=<span class="string"> recommended</span>
 </code></pre><p>The following properties are not registered in <a href="http://caniuse.com">caniuse</a>.</p>
-<h3>Supported properties</h3><p>The following properties are implemented by the vendor mecanism and will be automaticaly prefixed using <a href="http://caniuse.com">caniuse</a> data: <code>align-content</code>, <code>align-items</code>, <code>align-self</code>, <code>animation</code>, <code>animation-delay</code>, <code>animation-direction</code>, <code>animation-duration</code>, <code>animation-fill-mode</code>, <code>animation-iteration-count</code>, <code>animation-name</code>, <code>animation-play-state</code>, <code>animation-timing-function</code>, <code>appearance</code>, <code>backface-visibility</code>, <code>background-clip</code>, <code>background-origin</code>, <code>background-size</code>, <code>border-image-source</code>, <code>border-image-slice</code>, <code>border-image-width</code>, <code>border-image-outset</code>, <code>border-image-repeat</code>, <code>border-image</code>, <code>box-sizing</code>, <code>clip-path</code>, <code>column-count</code>, <code>column-fill</code>, <code>column-gap</code>, <code>column-rule</code>, <code>column-rule-color</code>, <code>column-rule-style</code>, <code>column-rule-width</code>, <code>column-span</code>, <code>column-width</code>, <code>columns</code>, <code>flex</code>, <code>flex-basis</code>, <code>flex-direction</code>, <code>flex-flow</code>, <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-wrap</code>, <code>grid</code>, <code>grid-area</code>, <code>grid-auto-columns</code>, <code>grid-auto-flow</code>, <code>grid-auto-position</code>, <code>grid-auto-rows</code>, <code>grid-column</code>, <code>grid-column-end</code>, <code>grid-column-start</code>, <code>grid-row</code>, <code>grid-row-end</code>, <code>grid-row-start</code>, <code>grid-template</code>, <code>grid-template-areas</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>hyphens</code>, <code>justify-content</code>, <code>mask</code>, <code>opacity</code>, <code>order</code>, <code>perspective</code>, <code>perspective-origin</code>, <code>transform</code>, <code>transform-origin</code>, <code>transform-style</code>, <code>transition</code>, <code>transition-delay</code>, <code>transition-duration</code>, <code>transition-property</code>, <code>transition-timing-function</code>, <code>user-select</code></p>
+<h3>Supported properties</h3><p>The following properties are implemented by the vendor mecanism and will be automaticaly prefixed using <a href="http://caniuse.com">caniuse</a> data: <code>align-content</code>, <code>align-items</code>, <code>align-self</code>, <code>animation</code>, <code>animation-delay</code>, <code>animation-direction</code>, <code>animation-duration</code>, <code>animation-fill-mode</code>, <code>animation-iteration-count</code>, <code>animation-name</code>, <code>animation-play-state</code>, <code>animation-timing-function</code>, <code>appearance</code>, <code>backface-visibility</code>, <code>background-clip</code>, <code>background-origin</code>, <code>background-size</code>, <code>border-image-source</code>, <code>border-image-slice</code>, <code>border-image-width</code>, <code>border-image-outset</code>, <code>border-image-repeat</code>, <code>border-image</code>, <code>box-shadow</code>, <code>box-sizing</code>, <code>clip-path</code>, <code>column-count</code>, <code>column-fill</code>, <code>column-gap</code>, <code>column-rule</code>, <code>column-rule-color</code>, <code>column-rule-style</code>, <code>column-rule-width</code>, <code>column-span</code>, <code>column-width</code>, <code>columns</code>, <code>flex</code>, <code>flex-basis</code>, <code>flex-direction</code>, <code>flex-flow</code>, <code>flex-grow</code>, <code>flex-shrink</code>, <code>flex-wrap</code>, <code>grid</code>, <code>grid-area</code>, <code>grid-auto-columns</code>, <code>grid-auto-flow</code>, <code>grid-auto-position</code>, <code>grid-auto-rows</code>, <code>grid-column</code>, <code>grid-column-end</code>, <code>grid-column-start</code>, <code>grid-row</code>, <code>grid-row-end</code>, <code>grid-row-start</code>, <code>grid-template</code>, <code>grid-template-areas</code>, <code>grid-template-columns</code>, <code>grid-template-rows</code>, <code>hyphens</code>, <code>justify-content</code>, <code>mask</code>, <code>opacity</code>, <code>order</code>, <code>perspective</code>, <code>perspective-origin</code>, <code>transform</code>, <code>transform-origin</code>, <code>transform-style</code>, <code>transition</code>, <code>transition-delay</code>, <code>transition-duration</code>, <code>transition-property</code>, <code>transition-timing-function</code>, <code>user-select</code></p>
 <h3>Unregistered properties</h3><p>The following properties are not registered (yet?) in <a href="http://caniuse.com">caniuse</a>, and use the prefixes as indicated:</p>
 <ul>
 <li><p><strong>appearance:</strong> <code>-webkit</code> <code>-moz</code></p>
 </li>
 <li><p><strong>backface-visibility:</strong> <code>-webkit</code> <code>-ms</code></p>
-</li>
-<li><p><strong>clip-path:</strong> <code>-webkit</code></p>
 </li>
 </ul>
 <h2>Specific prefixes</h2><p>If you want specific prefixes, you can force them by setting the global variable <code>ks-vendors-prefixes</code> with the prefixes you want.  </p>
@@ -696,17 +694,17 @@ ks-support-ie = <span class="number">11</span>
 ks-vendors-prefixes = o ms webkit moz
 
 <span class="tag">button</span>
-    <span class="attribute">clip-path</span> <span class="attribute">none</span>
+    <span class="attribute">backface-visibility</span> visible
 
 ks-vendors-prefixes = recommended
 
 <span class="tag">button</span>
-    <span class="attribute">clip-path</span> <span class="attribute">none</span>
+    <span class="attribute">backface-visibility</span> visible
 
 ks-vendors-prefixes = false
 
 <span class="tag">button</span>
-    <span class="attribute">clip-path</span> <span class="attribute">none</span>
+    <span class="attribute">backface-visibility</span> visible
 
 <span class="tag">button</span>
     <span class="function"><span class="title">vendor</span><span class="params">( <span class="string">&quot;columns&quot;</span>, auto auto, feature: <span class="string">&quot;multicolumn&quot;</span> )</span></span>
@@ -735,18 +733,18 @@ ks-support-ignore-features = <span class="string">&quot;css3-boxsizing&quot;</sp
   <span class="rule"><span class="attribute">hyphens</span>:<span class="value"> manual</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">button</span> <span class="rules">{
-  <span class="rule"><span class="attribute">-o-clip-path</span>:<span class="value"> none</span></span>;
-  <span class="rule"><span class="attribute">-ms-clip-path</span>:<span class="value"> none</span></span>;
-  <span class="rule"><span class="attribute">-webkit-clip-path</span>:<span class="value"> none</span></span>;
-  <span class="rule"><span class="attribute">-moz-clip-path</span>:<span class="value"> none</span></span>;
-  <span class="rule"><span class="attribute">clip-path</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">-o-backface-visibility</span>:<span class="value"> visible</span></span>;
+  <span class="rule"><span class="attribute">-ms-backface-visibility</span>:<span class="value"> visible</span></span>;
+  <span class="rule"><span class="attribute">-webkit-backface-visibility</span>:<span class="value"> visible</span></span>;
+  <span class="rule"><span class="attribute">-moz-backface-visibility</span>:<span class="value"> visible</span></span>;
+  <span class="rule"><span class="attribute">backface-visibility</span>:<span class="value"> visible</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">button</span> <span class="rules">{
-  <span class="rule"><span class="attribute">-webkit-clip-path</span>:<span class="value"> none</span></span>;
-  <span class="rule"><span class="attribute">clip-path</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">-webkit-backface-visibility</span>:<span class="value"> visible</span></span>;
+  <span class="rule"><span class="attribute">backface-visibility</span>:<span class="value"> visible</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">button</span> <span class="rules">{
-  <span class="rule"><span class="attribute">clip-path</span>:<span class="value"> none</span></span>;
+  <span class="rule"><span class="attribute">backface-visibility</span>:<span class="value"> visible</span></span>;
 <span class="rule">}</span></span>
 <span class="tag">button</span> <span class="rules">{
   <span class="rule"><span class="attribute">-webkit-columns</span>:<span class="value"> auto auto</span></span>;
@@ -1165,9 +1163,10 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
   <span class="rule"><span class="attribute">clear</span>:<span class="value"> both</span></span>;
 <span class="rule">}</span></span>
 </code></pre>
-</article><article id="position"><h1>position mixins</h1><p>The position mixins gives you four convenient shortcuts for <code>position</code> property.<br>Simply call the value of position as property, and gives the values of <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> as value.  </p>
+</article><article id="position"><h1>position mixins</h1><p>The position mixins gives you five convenient shortcuts for <code>position</code> property.<br>Simply call the value of position as property, and gives the values of <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code> as value.  </p>
 <p><strong>Note:</strong> The values are parsed in the same way as in <code>margin</code> or <code>padding</code> method : 1 value affect all, 2 values are for <code>top</code>/<code>bottom</code> and <code>left</code>/<code>right</code>, 3 values are for <code>top</code>, <code>left</code>/<code>right</code> and <code>bottom</code>, and 4 values are for <code>top</code>, <code>right</code>, <code>bottom</code> and <code>left</code>.</p>
 <p><strong>Note 2:</strong> If you give the <code>false</code> value to a parameter, it will be ignored</p>
+<p><strong>Note 3:</strong> Since version <code>0.11.7</code>, position mixin supports <code>sticky</code> value, using caniuse data.</p>
 <h3>Usage</h3><pre><code class="lang-stylus"><span class="tag">div</span>
     static <span class="number">10px</span>
 
@@ -1178,13 +1177,19 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
     absolute <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span>
 
 <span class="tag">div</span>
-    fixed <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>    
+    fixed <span class="number">10px</span> <span class="number">20px</span> <span class="number">30px</span> <span class="number">40px</span>
 
 <span class="tag">div</span>
     fixed <span class="number">10px</span> false <span class="number">30px</span>
 
 <span class="tag">div</span>
     fixed <span class="number">10px</span> <span class="number">20px</span> false <span class="number">40px</span>
+
+<span class="tag">div</span>
+    <span class="attribute">position</span> sticky
+
+<span class="tag">div</span>
+    sticky <span class="number">10px</span> <span class="number">20px</span> <span class="number">0</span> <span class="number">40px</span>
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="tag">div</span> <span class="rules">{
   <span class="rule"><span class="attribute">position</span>:<span class="value"> static</span></span>;
@@ -1228,6 +1233,20 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
   <span class="rule"><span class="attribute">position</span>:<span class="value"> fixed</span></span>;
   <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
   <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20px</span></span></span>;
+  <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">40px</span></span></span>;
+<span class="rule">}</span></span>
+
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> -webkit-sticky</span></span>;
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> sticky</span></span>;
+<span class="rule">}</span></span>
+
+<span class="tag">div</span> <span class="rules">{
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> -webkit-sticky</span></span>;
+  <span class="rule"><span class="attribute">position</span>:<span class="value"> sticky</span></span>;
+  <span class="rule"><span class="attribute">top</span>:<span class="value"> <span class="number">10px</span></span></span>;
+  <span class="rule"><span class="attribute">right</span>:<span class="value"> <span class="number">20px</span></span></span>;
+  <span class="rule"><span class="attribute">bottom</span>:<span class="value"> <span class="number">0</span></span></span>;
   <span class="rule"><span class="attribute">left</span>:<span class="value"> <span class="number">40px</span></span></span>;
 <span class="rule">}</span></span>
 </code></pre>
