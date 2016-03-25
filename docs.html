@@ -1,5 +1,5 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title>docs - kouto swiss - A complete CSS framework for Stylus</title><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" href="styles/styles.css"><!--if lt IE 9script( src="http://html5shiv.googlecode.com/svn/trunk/html5.js" )
---></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#webstorm">webstorm</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li><li><a href="#no-conflict-mode">no-conflict-mode</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#ratio-box">ratio-box</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.11.14</strong>, build on top of Stylus <strong class="stylus">v0.53.0</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
+--></head><body><div id="wrapper"><header><h1><a href="http://kouto-swiss.io"><span>kouto swiss</span></a></h1><h2>A complete CSS framework for Stylus</h2><a href="javascript:void(0)">toggle nav</a><nav><ul><li><strong>usage</strong><ul><li><a href="#grunt">grunt</a></li><li><a href="#gulp">gulp</a></li><li><a href="#third-party">third-party</a></li><li><a href="#webstorm">webstorm</a></li><li><a href="#middleware">middleware</a></li><li><a href="#stylus">stylus</a></li><li><a href="#nib">nib</a></li><li><a href="#no-conflict-mode">no-conflict-mode</a></li></ul></li><li><strong>reset</strong><ul><li><a href="#meyer-reset">meyer-reset</a></li><li><a href="#box-sizing-reset">box-sizing-reset</a></li><li><a href="#normalize">normalize</a></li></ul></li><li><strong>mixins</strong><ul><li><a href="#calc">calc</a></li><li><a href="#font-face">font-face</a></li><li><a href="#keyframes">keyframes</a></li><li><a href="#placeholder">placeholder</a></li><li><a href="#ratio-box">ratio-box</a></li><li><a href="#linear-gradient">linear-gradient</a></li><li><a href="#radial-gradient">radial-gradient</a></li><li><a href="#repeating-linear-gradient">repeating-linear-gradient</a></li><li><a href="#repeating-radial-gradient">repeating-radial-gradient</a></li><li><a href="#vendors">vendors</a></li></ul></li><li><strong>functions</strong><ul><li><a href="#em">em</a></li><li><a href="#rem">rem</a></li><li><a href="#percent">percent</a></li><li><a href="#modular-scale">modular-scale</a></li><li><a href="#golden-ratio">golden-ratio</a></li><li><a href="#color-fallback">color-fallback</a></li><li><a href="#luminosity">luminosity</a></li><li><a href="#analogous">analogous</a></li><li><a href="#extended-analogous">extended-analogous</a></li><li><a href="#monochrome">monochrome</a></li><li><a href="#split-complements">split-complements</a></li><li><a href="#triad">triad</a></li><li><a href="#quad">quad</a></li></ul></li><li><strong>utilities</strong><ul><li><a href="#colors">colors</a></li><li><a href="#clearfix">clearfix</a></li><li><a href="#position">position</a></li><li><a href="#size">size</a></li><li><a href="#font-stack">font-stack</a></li><li><a href="#hide-text">hide-text</a></li><li><a href="#easing">easing</a></li><li><a href="#ellipsis">ellipsis</a></li><li><a href="#media-query">media-query</a></li><li><a href="#retina-image">retina-image</a></li><li><a href="#retina-query">retina-query</a></li><li><a href="#triangle">triangle</a></li></ul></li><li><strong>grid</strong><ul><li><a href="#system">system</a></li><li><a href="#gs">gs</a></li><li><a href="#col">col</a></li><li><a href="#row">row</a></li><li><a href="#offset">offset</a></li></ul></li></ul></nav></header><section class="about"><p>The documentation below refers to kouto swiss <strong class="version">v0.12.0</strong>, build on top of Stylus <strong class="stylus">v0.54.2</strong></p></section><div class="docs"><h2>usage</h2><article id="grunt"><h1>Included in compilation with grunt</h1><p>To use <strong>kouto swiss</strong> with grunt, you can use <a href="https://www.npmjs.org/package/grunt-contrib-stylus">grunt-contrib-stylus</a>, and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 <p>You can also use <a href="https://www.npmjs.org/package/grunt-ks-stylus">grunt-ks-stylus</a>, which is a fork of <strong>grunt-contrib-stylus</strong>, with <strong>kouto swiss</strong> included.</p>
 </article><article id="gulp"><h1>Included in compilation with gulp</h1><p>To use <strong>kouto swiss</strong> with gulp, use <a href="https://www.npmjs.org/package/gulp-stylus">gulp-stylus</a> and include <strong>kouto swiss</strong> in your <code>use</code> option for the task.</p>
 </article><article id="third-party"><h1>Included in compilation with third-party tools</h1><p>To use <strong>kouto swiss</strong> with third-party tools like <a href="https://incident57.com/codekit/">Codekit</a> or <a href="http://alphapixels.com/prepros/">Prepros</a>, you should include <strong>kouto swiss</strong> on your project by yourself. You can download it <a href="https://github.com/krkn/kouto-swiss/releases">on github</a>.</p>
@@ -32,7 +32,7 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 } ) );
 </code></pre>
 </article><article id="stylus"><h1>Stylus API</h1><p>To gain access to the kouto swiss tools from your Stylus files, simply add:</p>
-<pre><code class="lang-stylus">@<span class="keyword">import</span> <span class="string">&quot;kouto-swiss&quot;</span>
+<pre><code class="lang-stylus">@<span class="keyword">import</span><span class="string"> &quot;kouto-swiss&quot;</span>
 </code></pre>
 </article><article id="nib"><h1>Using nib with kouto swiss</h1><p><strong>kouto swiss</strong> is highly inspired by <a href="http://visionmedia.github.io/nib/">nib</a>.</p>
 <p>As kouto swiss and nib shares some functions &amp; mixins names, <strong>it&apos;s not a great idea</strong> to use nib and kouto swiss together.</p>
@@ -50,7 +50,7 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 </article><h2>reset</h2><article id="meyer-reset"><h1><code>meyer-reset()</code></h1><p>A global reset, using&apos;s the <a href="http://meyerweb.com/eric/tools/css/reset/">Eric Meyer&apos;s CSS reset v2</a>.</p>
 <h3>Usage</h3><pre><code class="lang-stylus"><span class="function"><span class="title">meyer-reset</span><span class="params">()</span></span>
 </code></pre>
-<h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">html</span>, <span class="selector-tag">body</span>, <span class="selector-tag">div</span>, <span class="selector-tag">span</span>, <span class="selector-tag">applet</span>, <span class="selector-tag">object</span>, <span class="selector-tag">iframe</span>, <span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>, <span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span>, <span class="selector-tag">p</span>, <span class="selector-tag">blockquote</span>, <span class="selector-tag">pre</span>, <span class="selector-tag">a</span>, <span class="selector-tag">abbr</span>, <span class="selector-tag">acronym</span>, <span class="selector-tag">address</span>, <span class="selector-tag">big</span>, <span class="selector-tag">cite</span>, <span class="selector-tag">code</span>, <span class="selector-tag">del</span>, <span class="selector-tag">dfn</span>, <span class="selector-tag">em</span>, <span class="selector-tag">img</span>, <span class="selector-tag">ins</span>, <span class="selector-tag">kbd</span>, <span class="selector-tag">q</span>, <span class="selector-tag">s</span>, <span class="selector-tag">samp</span>, <span class="selector-tag">small</span>, <span class="selector-tag">strike</span>, <span class="selector-tag">strong</span>, <span class="selector-tag">sub</span>, <span class="selector-tag">sup</span>, <span class="selector-tag">tt</span>, <span class="selector-tag">var</span>, <span class="selector-tag">b</span>, <span class="selector-tag">u</span>, <span class="selector-tag">i</span>, <span class="selector-tag">center</span>, <span class="selector-tag">dl</span>, <span class="selector-tag">dt</span>, <span class="selector-tag">dd</span>, <span class="selector-tag">ol</span>, <span class="selector-tag">ul</span>, <span class="selector-tag">li</span>, <span class="selector-tag">fieldset</span>, <span class="selector-tag">form</span>, <span class="selector-tag">label</span>, <span class="selector-tag">legend</span>, <span class="selector-tag">table</span>, <span class="selector-tag">caption</span>, <span class="selector-tag">tbody</span>, <span class="selector-tag">tfoot</span>, <span class="selector-tag">thead</span>, <span class="selector-tag">tr</span>, <span class="selector-tag">th</span>, <span class="selector-tag">td</span>, <span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">canvas</span>, <span class="selector-tag">details</span>, <span class="selector-tag">embed</span>, <span class="selector-tag">figure</span>, <span class="selector-tag">figcaption</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">hgroup</span>, <span class="selector-tag">menu</span>, <span class="selector-tag">nav</span>, <span class="selector-tag">output</span>, <span class="selector-tag">ruby</span>, <span class="selector-tag">section</span>, <span class="selector-tag">summary</span>, <span class="selector-tag">time</span>, <span class="selector-tag">mark</span>, <span class="selector-tag">audio</span>, <span class="selector-tag">video</span> {
+<h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">html</span>, <span class="selector-tag">body</span>, <span class="selector-tag">div</span>, <span class="selector-tag">span</span>, applet, <span class="selector-tag">object</span>, <span class="selector-tag">iframe</span>, <span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>, <span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span>, <span class="selector-tag">p</span>, <span class="selector-tag">blockquote</span>, pre, <span class="selector-tag">a</span>, <span class="selector-tag">abbr</span>, acronym, <span class="selector-tag">address</span>, big, <span class="selector-tag">cite</span>, <span class="selector-tag">code</span>, <span class="selector-tag">del</span>, <span class="selector-tag">dfn</span>, <span class="selector-tag">em</span>, <span class="selector-tag">img</span>, <span class="selector-tag">ins</span>, <span class="selector-tag">kbd</span>, <span class="selector-tag">q</span>, s, <span class="selector-tag">samp</span>, small, strike, <span class="selector-tag">strong</span>, sub, <span class="selector-tag">sup</span>, tt, <span class="selector-tag">var</span>, <span class="selector-tag">b</span>, u, <span class="selector-tag">i</span>, center, <span class="selector-tag">dl</span>, <span class="selector-tag">dt</span>, <span class="selector-tag">dd</span>, <span class="selector-tag">ol</span>, <span class="selector-tag">ul</span>, <span class="selector-tag">li</span>, <span class="selector-tag">fieldset</span>, <span class="selector-tag">form</span>, <span class="selector-tag">label</span>, <span class="selector-tag">legend</span>, <span class="selector-tag">table</span>, <span class="selector-tag">caption</span>, <span class="selector-tag">tbody</span>, <span class="selector-tag">tfoot</span>, <span class="selector-tag">thead</span>, <span class="selector-tag">tr</span>, <span class="selector-tag">th</span>, <span class="selector-tag">td</span>, <span class="selector-tag">article</span>, <span class="selector-tag">aside</span>, <span class="selector-tag">canvas</span>, <span class="selector-tag">details</span>, embed, <span class="selector-tag">figure</span>, <span class="selector-tag">figcaption</span>, <span class="selector-tag">footer</span>, <span class="selector-tag">header</span>, <span class="selector-tag">hgroup</span>, <span class="selector-tag">menu</span>, <span class="selector-tag">nav</span>, output, ruby, <span class="selector-tag">section</span>, <span class="selector-tag">summary</span>, <span class="selector-tag">time</span>, <span class="selector-tag">mark</span>, <span class="selector-tag">audio</span>, <span class="selector-tag">video</span> {
   <span class="attribute">margin</span>: <span class="number">0</span>;
   <span class="attribute">padding</span>: <span class="number">0</span>;
   <span class="attribute">border</span>: <span class="number">0</span>;
@@ -70,7 +70,7 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 <span class="selector-tag">blockquote</span>, <span class="selector-tag">q</span> {
   <span class="attribute">quotes</span>: none;
 }
-<span class="selector-tag">blockquote</span><span class="selector-pseudo">:before</span>, <span class="selector-tag">blockquote</span><span class="selector-pseudo">:after</span>, <span class="selector-tag">q</span><span class="selector-pseudo">:before</span>, <span class="selector-tag">q</span><span class="selector-pseudo">:after</span> {
+<span class="selector-tag">blockquote</span>:before, <span class="selector-tag">blockquote</span>:after, <span class="selector-tag">q</span>:before, <span class="selector-tag">q</span>:after {
   <span class="attribute">content</span>: <span class="string">&quot;&quot;</span>;
   <span class="attribute">content</span>: none;
 }
@@ -308,25 +308,26 @@ server.<span class="keyword">use</span>( stylus.middleware( {
     <span class="attribute">width</span>: calc( <span class="string">&quot;100% - 80px&quot;</span>, <span class="number">90%</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">body</span> {
-  <span class="attribute">width</span>: <span class="built_in">-webkit-calc</span>(<span class="number">100%</span> - <span class="number">80px</span>);
-  <span class="attribute">width</span>: <span class="built_in">calc</span>(<span class="number">100%</span> - <span class="number">80px</span>);
+  <span class="attribute">width</span>: <span class="built_in">-webkit-calc</span>(100% - 80px);
+  <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 80px);
 }
 
 <span class="selector-tag">body</span> {
   <span class="attribute">width</span>: <span class="number">90%</span>;
-  <span class="attribute">width</span>: <span class="built_in">-webkit-calc</span>(<span class="number">100%</span> - <span class="number">80px</span>);
-  <span class="attribute">width</span>: <span class="built_in">calc</span>(<span class="number">100%</span> - <span class="number">80px</span>);
+  <span class="attribute">width</span>: <span class="built_in">-webkit-calc</span>(100% - 80px);
+  <span class="attribute">width</span>: <span class="built_in">calc</span>(100% - 80px);
 }
 </code></pre>
 </article><article id="font-face"><h1>font-face()</h1><p>Simple <code>@font-face</code> mixin.</p>
-<h3>Signature</h3><p><code>font-face( name, font-src [, weight [, style [, formats [, svg-font-name ] ] ] ] )</code></p>
+<h3>Signature</h3><p><code>font-face( name, font-src [, weight [, style [, formats [, svg-font-name ] [, local-font-name ] ] ] ] )</code></p>
 <ul>
 <li><code>name</code>: name of the font, used for font-family</li>
 <li><code>font-src</code>: the path for the font, minus the extension</li>
 <li><code>weight</code>: the weight of the font, for font-weight. <em>Optional</em>.</li>
 <li><code>style</code>: the style of the font, for font-style. <em>Optional</em>.</li>
-<li><code>formats</code>: the formats to includes. <em>Optional</em>. Default: <code>eot woff2 woff truetype svg</code> Accepted words: <code>eot woff2 woff truetype ttf opentype otf svg</code></li>
+<li><code>formats</code>: the formats to includes. <em>Optional</em>. Default: <code>eot woff2 woff truetype svg</code> Accepted words: <code>eot woff2 woff truetype ttf opentype otf svg local</code></li>
 <li><code>svg-font-name</code>: the svg font name. <em>Optional</em>. Default: use the <code>name</code> parameters.</li>
+<li><code>local-font-name</code>: the local font name. <em>Optional</em>. Default: use the <code>name</code> parameters.</li>
 </ul>
 <h3>Usage</h3><pre><code class="lang-stylus"><span class="function"><span class="title">font-face</span><span class="params">( <span class="string">&quot;Roboto&quot;</span>, <span class="string">&quot;./fonts/Roboto-Regular-webfont&quot;</span>, normal )</span></span>
 
@@ -338,7 +339,7 @@ server.<span class="keyword">use</span>( stylus.middleware( {
   <span class="attribute">font-family</span>: <span class="string">&quot;Roboto&quot;</span>;
   <span class="attribute">font-weight</span>: normal;
   <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot&quot;</span>);
-  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot?#iefix&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff2&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.svg#Roboto&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;svg&quot;</span>);
+  <span class="attribute">src</span>: <span class="built_in">local</span>(<span class="string">&quot;Roboto&quot;</span>, url(<span class="string">&quot;./fonts/Roboto-Regular-webfont.eot?#iefix&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff2&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.woff&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Regular-webfont.svg#Roboto&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;svg&quot;</span>);
 }
 
 @<span class="keyword">font-face</span> {
@@ -346,7 +347,7 @@ server.<span class="keyword">use</span>( stylus.middleware( {
   <span class="attribute">font-weight</span>: normal;
   <span class="attribute">font-style</span>: italic;
   <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot&quot;</span>);
-  <span class="attribute">src</span>: <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot?#iefix&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff2&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.svg#Roboto&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;svg&quot;</span>);
+  <span class="attribute">src</span>: <span class="built_in">local</span>(<span class="string">&quot;Roboto&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.eot?#iefix&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;embedded-opentype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff2&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff2&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.woff&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;woff&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.ttf&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;truetype&quot;</span>), <span class="built_in">url</span>(<span class="string">&quot;./fonts/Roboto-Italic-webfont.svg#Roboto&quot;</span>) <span class="built_in">format</span>(<span class="string">&quot;svg&quot;</span>);
 }
 
 @<span class="keyword">font-face</span> {
@@ -543,25 +544,25 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 </blockquote>
 <h3>Signature</h3><p><code>linear-gradient( start, stops... )</code></p>
 <p>The implementation of <code>linear-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient">the CSS3 specs</a>.</p>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-tag">div</span>
-  <span class="attribute">background-image</span>: linear-gradient( -<span class="number">45deg</span>, yellow, green )
+<h3>Usage</h3><pre><code class="lang-stylus">div
+  <span class="built_in">background</span>-<span class="built_in">image</span>: linear-gradient( <span class="number">-45</span>deg, yellow, <span class="built_in">green</span> )
 
-<span class="selector-tag">div</span>
-  <span class="attribute">background-image</span>: linear-gradient( to <span class="attribute">top</span> <span class="attribute">right</span>, red, white <span class="number">30%</span>, blue )
+div
+  <span class="built_in">background</span>-<span class="built_in">image</span>: linear-gradient( to top right, <span class="built_in">red</span>, white <span class="number">30</span>%, <span class="built_in">blue</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(<span class="number">135deg</span>,<span class="number">#ff0</span>,<span class="number">#008000</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-moz-linear-gradient</span>(<span class="number">135deg</span>,<span class="number">#ff0</span>,<span class="number">#008000</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-ms-linear-gradient</span>(<span class="number">135deg</span>,<span class="number">#ff0</span>,<span class="number">#008000</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-o-linear-gradient</span>(<span class="number">135deg</span>,<span class="number">#ff0</span>,<span class="number">#008000</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(-<span class="number">45deg</span>,<span class="number">#ff0</span>,<span class="number">#008000</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(135deg,#ff0,#008000);
+  <span class="attribute">background-image</span>: <span class="built_in">-moz-linear-gradient</span>(135deg,#ff0,#008000);
+  <span class="attribute">background-image</span>: <span class="built_in">-ms-linear-gradient</span>(135deg,#ff0,#008000);
+  <span class="attribute">background-image</span>: <span class="built_in">-o-linear-gradient</span>(135deg,#ff0,#008000);
+  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(-45deg,#ff0,#008000);
 }
 <span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(bottom left,<span class="number">#f00</span>,<span class="number">#fff</span> <span class="number">30%</span>,<span class="number">#00f</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-moz-linear-gradient</span>(bottom left,<span class="number">#f00</span>,<span class="number">#fff</span> <span class="number">30%</span>,<span class="number">#00f</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-ms-linear-gradient</span>(bottom left,<span class="number">#f00</span>,<span class="number">#fff</span> <span class="number">30%</span>,<span class="number">#00f</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-o-linear-gradient</span>(bottom left,<span class="number">#f00</span>,<span class="number">#fff</span> <span class="number">30%</span>,<span class="number">#00f</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to top right,<span class="number">#f00</span>,<span class="number">#fff</span> <span class="number">30%</span>,<span class="number">#00f</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-linear-gradient</span>(bottom left,#f00,#fff 30%,#00f);
+  <span class="attribute">background-image</span>: <span class="built_in">-moz-linear-gradient</span>(bottom left,#f00,#fff 30%,#00f);
+  <span class="attribute">background-image</span>: <span class="built_in">-ms-linear-gradient</span>(bottom left,#f00,#fff 30%,#00f);
+  <span class="attribute">background-image</span>: <span class="built_in">-o-linear-gradient</span>(bottom left,#f00,#fff 30%,#00f);
+  <span class="attribute">background-image</span>: <span class="built_in">linear-gradient</span>(to top right,#f00,#fff 30%,#00f);
 }
 </code></pre>
 </article><article id="radial-gradient"><h1>radial-gradient()</h1><p>Display a <code>radial-gradient</code>.</p>
@@ -571,24 +572,24 @@ server.<span class="keyword">use</span>( stylus.middleware( {
 <h3>Signature</h3><p><code>radial-gradient( stops... )</code></p>
 <p>The implementation of <code>radial-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient">the CSS3 specs</a>.</p>
 <h3>Usage</h3><pre><code class="lang-stylus">div
-    background-<span class="keyword">image</span>: <span class="keyword">radial</span>-gradient( <span class="number">50</span>% <span class="number">50</span>%, black, white )
+    <span class="built_in">background</span>-<span class="built_in">image</span>: radial-gradient( <span class="number">50</span><span class="symbol">%</span> <span class="number">50</span><span class="symbol">%</span>, black, white )
 
 div
-    background-<span class="keyword">image</span>: <span class="keyword">radial</span>-gradient( ellipse at center, yellow <span class="number">0</span>%, green <span class="number">100</span>% )
+    <span class="built_in">background</span>-<span class="built_in">image</span>: radial-gradient( <span class="built_in">ellipse</span> <span class="built_in">at</span> <span class="built_in">center</span>, yellow <span class="number">0</span><span class="symbol">%</span>, green <span class="number">100</span><span class="symbol">%</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="number">#000</span>,<span class="number">#fff</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-moz-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="number">#000</span>,<span class="number">#fff</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-ms-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="number">#000</span>,<span class="number">#fff</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-o-radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="number">#000</span>,<span class="number">#fff</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(<span class="number">50%</span> <span class="number">50%</span>,<span class="number">#000</span>,<span class="number">#fff</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-radial-gradient</span>(50% 50%,#000,#fff);
+  <span class="attribute">background-image</span>: <span class="built_in">-moz-radial-gradient</span>(50% 50%,#000,#fff);
+  <span class="attribute">background-image</span>: <span class="built_in">-ms-radial-gradient</span>(50% 50%,#000,#fff);
+  <span class="attribute">background-image</span>: <span class="built_in">-o-radial-gradient</span>(50% 50%,#000,#fff);
+  <span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(50% 50%,#000,#fff);
 }
 <span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-radial-gradient</span>(ellipse at center,<span class="number">#ff0</span> <span class="number">0%</span>,<span class="number">#008000</span> <span class="number">100%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-moz-radial-gradient</span>(ellipse at center,<span class="number">#ff0</span> <span class="number">0%</span>,<span class="number">#008000</span> <span class="number">100%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-ms-radial-gradient</span>(ellipse at center,<span class="number">#ff0</span> <span class="number">0%</span>,<span class="number">#008000</span> <span class="number">100%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">-o-radial-gradient</span>(ellipse at center,<span class="number">#ff0</span> <span class="number">0%</span>,<span class="number">#008000</span> <span class="number">100%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(ellipse at center,<span class="number">#ff0</span> <span class="number">0%</span>,<span class="number">#008000</span> <span class="number">100%</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-radial-gradient</span>(ellipse at center,#ff0 0%,#008000 100%);
+  <span class="attribute">background-image</span>: <span class="built_in">-moz-radial-gradient</span>(ellipse at center,#ff0 0%,#008000 100%);
+  <span class="attribute">background-image</span>: <span class="built_in">-ms-radial-gradient</span>(ellipse at center,#ff0 0%,#008000 100%);
+  <span class="attribute">background-image</span>: <span class="built_in">-o-radial-gradient</span>(ellipse at center,#ff0 0%,#008000 100%);
+  <span class="attribute">background-image</span>: <span class="built_in">radial-gradient</span>(ellipse at center,#ff0 0%,#008000 100%);
 }
 </code></pre>
 </article><article id="repeating-linear-gradient"><h1>repeating-linear-gradient()</h1><p>Display a <code>repeating-linear-gradient</code>.</p>
@@ -598,25 +599,25 @@ div
 <h3>Signature</h3><p><code>repeating-linear-gradient( start, stops... )</code></p>
 <p>The implementation of <code>repeating-linear-gradient</code> follows <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient">the CSS3 specs</a>.</p>
 <h3>Usage</h3><pre><code class="lang-stylus">div
-    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-linear-gradient( rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ), rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ) <span class="number">7</span>%, rgb( <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span> ) <span class="number">10</span>% )
+    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-<span class="built_in">linear</span>-gradient( rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ), rgb( <span class="number">26</span>, <span class="number">198</span>, <span class="number">204</span> ) <span class="number">7</span><span class="symbol">%</span>, rgb( <span class="number">100</span>, <span class="number">100</span>, <span class="number">100</span> ) <span class="number">10</span><span class="symbol">%</span> )
 
 div
-    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-linear-gradient( <span class="number">-45</span>deg, transparent, transparent <span class="number">25</span>px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">25</span>px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) <span class="number">50</span>px)
+    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-<span class="built_in">linear</span>-gradient( -45deg, <span class="built_in">transparent</span>, <span class="built_in">transparent</span> 25px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) 25px, rgba( <span class="number">255</span>, <span class="number">255</span>, <span class="number">255</span>, <span class="number">1</span> ) 50px)
 
 div
-    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-linear-gradient( to left top, <span class="built_in">blue</span>, <span class="built_in">green</span> <span class="number">40</span>%, <span class="built_in">red</span> );
+    <span class="built_in">background</span>-<span class="built_in">image</span>: repeating-<span class="built_in">linear</span>-gradient( to left top, blue, green <span class="number">40</span><span class="symbol">%</span>, red );
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(<span class="number">#1ac6cc</span>,<span class="number">#1ac6cc</span> <span class="number">7%</span>,<span class="number">#646464</span> <span class="number">10%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(<span class="number">#1ac6cc</span>,<span class="number">#1ac6cc</span> <span class="number">7%</span>,<span class="number">#646464</span> <span class="number">10%</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(#1ac6cc,#1ac6cc 7%,#646464 10%);
+  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(#1ac6cc,#1ac6cc 7%,#646464 10%);
 }
 <span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(<span class="number">135deg</span>,transparent,transparent <span class="number">25px</span>,<span class="number">#fff</span> <span class="number">25px</span>,<span class="number">#fff</span> <span class="number">50px</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(-<span class="number">45deg</span>,transparent,transparent <span class="number">25px</span>,<span class="number">#fff</span> <span class="number">25px</span>,<span class="number">#fff</span> <span class="number">50px</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(135deg,transparent,transparent 25px,#fff 25px,#fff 50px);
+  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(-45deg,transparent,transparent 25px,#fff 25px,#fff 50px);
 }
 <span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(right bottom,<span class="number">#00f</span>,<span class="number">#008000</span> <span class="number">40%</span>,<span class="number">#f00</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(to left top,<span class="number">#00f</span>,<span class="number">#008000</span> <span class="number">40%</span>,<span class="number">#f00</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-linear-gradient</span>(right bottom,#00f,#008000 40%,#f00);
+  <span class="attribute">background-image</span>: <span class="built_in">repeating-linear-gradient</span>(to left top,#00f,#008000 40%,#f00);
 }
 </code></pre>
 </article><article id="repeating-radial-gradient"><h1>repeating-radial-gradient()</h1><p>Display a <code>repeating-radial-gradient</code>.</p>
@@ -632,12 +633,12 @@ div
 </span>    <span class="keyword">background-image: </span>repeating-radial-gradient( ellipse farthest-corner, red, <span class="keyword">black </span><span class="number">5</span>%, <span class="keyword">blue </span><span class="number">5</span>%, green <span class="number">10</span>% )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-radial-gradient</span>(<span class="number">#000</span>,<span class="number">#000</span> <span class="number">5px</span>,<span class="number">#fff</span> <span class="number">5px</span>,<span class="number">#fff</span> <span class="number">10px</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">repeating-radial-gradient</span>(<span class="number">#000</span>,<span class="number">#000</span> <span class="number">5px</span>,<span class="number">#fff</span> <span class="number">5px</span>,<span class="number">#fff</span> <span class="number">10px</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-radial-gradient</span>(#000,#000 5px,#fff 5px,#fff 10px);
+  <span class="attribute">background-image</span>: <span class="built_in">repeating-radial-gradient</span>(#000,#000 5px,#fff 5px,#fff 10px);
 }
 <span class="selector-tag">div</span> {
-  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-radial-gradient</span>(ellipse farthest-corner,<span class="number">#f00</span>,<span class="number">#000</span> <span class="number">5%</span>,<span class="number">#00f</span> <span class="number">5%</span>,<span class="number">#008000</span> <span class="number">10%</span>);
-  <span class="attribute">background-image</span>: <span class="built_in">repeating-radial-gradient</span>(ellipse farthest-corner,<span class="number">#f00</span>,<span class="number">#000</span> <span class="number">5%</span>,<span class="number">#00f</span> <span class="number">5%</span>,<span class="number">#008000</span> <span class="number">10%</span>);
+  <span class="attribute">background-image</span>: <span class="built_in">-webkit-repeating-radial-gradient</span>(ellipse farthest-corner,#f00,#000 5%,#00f 5%,#008000 10%);
+  <span class="attribute">background-image</span>: <span class="built_in">repeating-radial-gradient</span>(ellipse farthest-corner,#f00,#000 5%,#00f 5%,#008000 10%);
 }
 </code></pre>
 </article><article id="vendors"><h1>Vendors Prefixes</h1><p><strong>kouto swiss</strong> comes with automatic vendor prefixer for the following properties.<br>You can define the behavior of the prefixer by changing the value of the global variable <code>ks-vendors-prefixes</code>.</p>
@@ -707,19 +708,19 @@ ks-vendors-prefixes = false
     <span class="attribute">backface-visibility</span>: visible
 
 <span class="selector-tag">button</span>
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> <span class="attribute">auto</span>, feature: <span class="string">&quot;multicolumn&quot;</span> )
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> auto, feature: <span class="string">&quot;multicolumn&quot;</span> )
 
 <span class="selector-tag">button</span>
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> <span class="attribute">auto</span>, prefixes: webkit moz ms o )
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> auto, prefixes: webkit moz ms o )
 
 <span class="selector-tag">button</span>
-    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> <span class="attribute">auto</span>, prefixes: webkit moz ms o, official: false )
+    vendor( <span class="string">&quot;columns&quot;</span>, <span class="attribute">auto</span> auto, prefixes: webkit moz ms o, official: false )
 
 ks-support-ignore-features = <span class="string">&quot;css3-boxsizing&quot;</span> <span class="string">&quot;css-animation&quot;</span>
 
 <span class="selector-tag">button</span>
-    <span class="attribute">animation</span>: <span class="attribute">none</span> <span class="number">0s</span> ease <span class="number">0s</span> <span class="number">1</span> <span class="attribute">normal</span> <span class="attribute">none</span>
-    <span class="attribute">box-sizing</span>: <span class="attribute">content</span>-box
+    <span class="attribute">animation</span>: none <span class="number">0s</span> ease <span class="number">0s</span> <span class="number">1</span> normal none
+    <span class="attribute">box-sizing</span>: content-box
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">button</span> {
   <span class="attribute">-webkit-hyphens</span>: manual;
@@ -928,11 +929,11 @@ Assumes <code>1rem = 16px</code>. You can override by passing a new value to the
 <ul>
 <li><code>color</code>: color to fallback.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-class">.no-alpha</span>
-    <span class="attribute">color</span>: <span class="attribute">color</span>-fallback( red )
+<h3>Usage</h3><pre><code class="lang-stylus">.no-<span class="built_in">alpha</span>
+    <span class="built_in">color</span>: <span class="built_in">color</span>-fallback( <span class="built_in">red</span> )
 
-<span class="selector-class">.alpha</span>
-    <span class="attribute">color</span>: <span class="attribute">color</span>-fallback( rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> ) )
+.<span class="built_in">alpha</span>
+    <span class="built_in">color</span>: <span class="built_in">color</span>-fallback( rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> ) )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-class">.no-alpha</span> {
   <span class="attribute">color</span>: <span class="number">#f00</span>;
@@ -940,43 +941,43 @@ Assumes <code>1rem = 16px</code>. You can override by passing a new value to the
 
 <span class="selector-class">.alpha</span> {
   <span class="attribute">color</span>: <span class="number">#f00</span>;
-  <span class="attribute">color</span>: <span class="built_in">rgba</span>(<span class="number">255</span>,<span class="number">0</span>,<span class="number">0</span>,<span class="number">0.5</span>);
+  <span class="attribute">color</span>: <span class="built_in">rgba</span>(255,0,0,0.5);
 }
 </code></pre>
 <h2>Implicit color fallback</h2><p>The <code>implicit color fallback</code> mecanism allows you to use the <code>color-fallback</code> function without calling it, by declaring an <code>ks-color-fallback-enabled</code> variable to <code>true</code>.</p>
 <p><strong>Note:</strong> prior to version <code>0.11.0</code>, the <code>ks-color-fallback-enabled</code> variable was called <code>ks-color-fallback</code>.</p>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-class">.foo</span>
-    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )
+<h3>Usage</h3><pre><code class="lang-stylus">.foo
+    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 
-ks-<span class="attribute">color</span>-fallback-enabled = true
+ks-<span class="built_in">color</span>-fallback-enabled = <span class="literal">true</span>
 
-<span class="selector-class">.bar</span>
-    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )
+.bar
+    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 
-<span class="selector-class">.bar</span>
-    <span class="attribute">background</span>: rgba( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, .<span class="number">5</span> ) url( test<span class="selector-class">.png</span> ) <span class="attribute">top</span> <span class="attribute">left</span> repeat
+.bar
+    <span class="attribute">background</span>: rgba( <span class="number">202</span>, <span class="number">43</span>, <span class="number">120</span>, <span class="number">.5</span> ) <span class="built_in">url</span>( test.png ) top left repeat
 
-ks-<span class="attribute">color</span>-fallback-enabled = false
+ks-<span class="built_in">color</span>-fallback-enabled = <span class="literal">false</span>
 
-<span class="selector-class">.foo</span>
-    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> )
+.foo
+    <span class="attribute">color</span>: rgba( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, <span class="number">.5</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-class">.foo</span> {
-  <span class="attribute">color</span>: <span class="built_in">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> );
+  <span class="attribute">color</span>: <span class="built_in">rgba</span>( 255, 0, 0, .5 );
 }
 
 <span class="selector-class">.bar</span> {
   <span class="attribute">color</span>: <span class="number">#f00</span>;
-  <span class="attribute">color</span>: <span class="built_in">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> );
+  <span class="attribute">color</span>: <span class="built_in">rgba</span>( 255, 0, 0, .5 );
 }
 
 <span class="selector-class">.foo</span> {
   <span class="attribute">background</span>: <span class="number">#ca2b78</span> <span class="built_in">url</span>(<span class="string">&quot;test.png&quot;</span>) top left repeat;
-  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">202</span>,<span class="number">43</span>,<span class="number">120</span>,<span class="number">0.5</span>) <span class="built_in">url</span>(<span class="string">&quot;test.png&quot;</span>) top left repeat;
+  <span class="attribute">background</span>: <span class="built_in">rgba</span>(202,43,120,0.5) <span class="built_in">url</span>(<span class="string">&quot;test.png&quot;</span>) top left repeat;
 }
 
 <span class="selector-class">.foo</span> {
-  <span class="attribute">color</span>: <span class="built_in">rgba</span>( <span class="number">255</span>, <span class="number">0</span>, <span class="number">0</span>, .<span class="number">5</span> );
+  <span class="attribute">color</span>: <span class="built_in">rgba</span>( 255, 0, 0, .5 );
 }
 </code></pre>
 </article><article id="luminosity"><h1><code>luminosity( color )</code></h1><p>Returns the <a href="http://www.w3.org/TR/WCAG20/#relativeluminancedef">WCAG luminosity</a> of the given color, as a <code>Number</code> between <code>0</code> (<em>black</em>) and <code>1</code> (<em>white</em>).</p>
@@ -985,8 +986,8 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
 <li><code>color</code>: color to analyse.</li>
 </ul>
 <h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-class">.luminosity</span>
-    <span class="selector-tag">background</span>: <span class="selector-id">#ff0</span>
-    <span class="selector-tag">color</span>: <span class="selector-tag">luminosity</span>( <span class="selector-id">#ff0</span> ) &gt; 0<span class="selector-class">.5</span> ? <span class="selector-tag">black</span> : <span class="selector-tag">white</span>
+    <span class="attribute">background</span>: <span class="number">#ff0</span>
+    <span class="attribute">color</span>: luminosity( <span class="number">#ff0</span> ) &gt; <span class="number">0.5</span> ? black : white
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-class">.luminosity</span> {
   <span class="attribute">background</span>: <span class="number">#ff0</span>;
@@ -1344,13 +1345,13 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
 <li><code>name</code>: name of the stack. <strong>Must be quoted</strong>.</li>
 </ul>
 <h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-tag">body</span>
-    <span class="attribute">font-family</span> <span class="attribute">font</span>-stack( <span class="string">&quot;Arial&quot;</span> )
+    <span class="attribute">font-family</span> font-stack( <span class="string">&quot;Arial&quot;</span> )
 
 <span class="selector-tag">body</span>
-    <span class="attribute">font-family</span> <span class="attribute">font</span>-stack( <span class="string">&quot;Helvetica&quot;</span> )
+    <span class="attribute">font-family</span> font-stack( <span class="string">&quot;Helvetica&quot;</span> )
 
 <span class="selector-tag">body</span>
-    <span class="attribute">font-family</span> <span class="attribute">font</span>-stack( <span class="string">&quot;Lucida Console&quot;</span> )
+    <span class="attribute">font-family</span> font-stack( <span class="string">&quot;Lucida Console&quot;</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">body</span> {
   <span class="attribute">font-family</span>: Arial, <span class="string">&quot;Helvetica Neue&quot;</span>, Helvetica, sans-serif;
@@ -1369,10 +1370,10 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
 <p>This mixin is based on which from <a href="http://bourbon.io">bourbon.io</a>.</p>
 </blockquote>
 <p>A height declaration is required for this to function.</p>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-tag">h1</span>
-    <span class="attribute">height</span>: <span class="number">75px</span>
-    <span class="attribute">background</span>: url( logo<span class="selector-class">.png</span> ) <span class="attribute">top</span> <span class="attribute">left</span> no-repeat
-    hide-text()
+<h3>Usage</h3><pre><code class="lang-stylus">h1
+    <span class="built_in">height</span>: <span class="number">75</span>px
+    <span class="built_in">background</span>: url( logo.png ) top left no-repeat
+    hide-<span class="built_in">text</span>()
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">h1</span> {
   <span class="attribute">height</span>: <span class="number">75px</span>;
@@ -1418,13 +1419,13 @@ ks-<span class="attribute">color</span>-fallback-enabled = false
 <ul>
 <li><code>name</code>: name of the preset. <strong>Must be quoted</strong>.</li>
 </ul>
-<h3>Usage</h3><pre><code class="lang-stylus"><span class="selector-tag">div</span>
-    <span class="attribute">transition</span>: all .<span class="number">25s</span> easing( <span class="string">&quot;in-quad&quot;</span> )
+<h3>Usage</h3><pre><code class="lang-stylus"><span class="attribute">div</span>
+    <span class="attribute">transition</span>: <span class="literal">all</span> .25s easing( <span class="string">&quot;in-quad&quot;</span> )
 </code></pre>
 <h3>Result</h3><pre><code class="lang-css"><span class="selector-tag">div</span> {
-  <span class="attribute">-webkit-transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>);
-  <span class="attribute">-o-transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>);
-  <span class="attribute">transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(<span class="number">0.55</span>, <span class="number">0.085</span>, <span class="number">0.68</span>, <span class="number">0.53</span>);
+  <span class="attribute">-webkit-transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(0.55, 0.085, 0.68, 0.53);
+  <span class="attribute">-o-transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(0.55, 0.085, 0.68, 0.53);
+  <span class="attribute">transition</span>: all <span class="number">0.25s</span> <span class="built_in">cubic-bezier</span>(0.55, 0.085, 0.68, 0.53);
 }
 </code></pre>
 </article><article id="ellipsis"><h1>overflow ellipsis</h1><p>The ellipsis mixin is a shortcut value to pass to an overflow property, which displays the code for a <code>text-overflow: ellipsis;</code>.</p>
@@ -1558,19 +1559,19 @@ breakpointMain = only screen, <span class="built_in">max</span>-<span class="bui
     <span class="selector-tag">div</span>
         <span class="attribute">color</span>: red
 </code></pre>
-<h3>Result</h3><pre><code class="lang-css"><span class="symbol">@media</span> all <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">125</span>dpi), all <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1.3</span>dppx) {
+<h3>Result</h3><pre><code class="lang-css">@media all <span class="keyword">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="keyword">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1.3</span>), all <span class="keyword">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>/<span class="number">1</span>), all <span class="keyword">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1.3</span>), all <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: 125dpi), all <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: <span class="number">1.</span>3dppx) {
   div {
-    color: <span class="meta">#f00<span class="comment">;</span></span>
+    <span class="built_in">color</span>: #f00;
   }
 }
-<span class="symbol">@media</span> only screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>/<span class="number">1</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">192</span>dpi), only screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">2</span>dppx) {
+@media only screen <span class="keyword">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="keyword">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">2</span>), only screen <span class="keyword">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>/<span class="number">1</span>), only screen <span class="keyword">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">2</span>), only screen <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: 192dpi), only screen <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: 2dppx) {
   div {
-    color: <span class="meta">#f00<span class="comment">;</span></span>
+    <span class="built_in">color</span>: #f00;
   }
 }
-<span class="symbol">@media</span> screen <span class="literal">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>/<span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">96</span>dpi), screen <span class="literal">and</span> (<span class="built_in">min</span>-resolution: <span class="number">1</span>dppx) {
+@media screen <span class="keyword">and</span> (-webkit-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="keyword">and</span> (<span class="built_in">min</span>--moz-device-pixel-ratio: <span class="number">1</span>), screen <span class="keyword">and</span> (-o-<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>/<span class="number">1</span>), screen <span class="keyword">and</span> (<span class="built_in">min</span>-device-pixel-ratio: <span class="number">1</span>), screen <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: 96dpi), screen <span class="keyword">and</span> (<span class="built_in">min</span>-<span class="built_in">resolution</span>: 1dppx) {
   div {
-    color: <span class="meta">#f00<span class="comment">;</span></span>
+    <span class="built_in">color</span>: #f00;
   }
 }
 </code></pre>
